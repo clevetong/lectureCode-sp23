@@ -32,11 +32,18 @@ public class SLList {
     /** Adds an item to the end of the list. */
     public void addLast(int x) {
         /* Your Code Here! */
+        if (first == null) {
+            first = new IntNode(x, null);
+        }
+        else {
+            first.next.addLast(x);
+        }
     }
 
     /** Returns the number of items in the list using recursion. */
     public int size() {
         /* Your Code Here! */
+
         return 0;
     }
 }

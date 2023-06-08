@@ -1,5 +1,10 @@
 package lec4_lists2;
 
+import java.io.FileReader;
+
+import hwk0a.starTriangle;
+import lec4_lists2.DIY.SLList.IntNode;
+
 /** An SLList is a list of integers, which hides the terrible truth
    * of the nakedness within. */
 public class SLList {	
@@ -64,6 +69,19 @@ public class SLList {
  	public int size() {
  		return size;
  	}
+
+	// private static int size(IntNode p) {
+	// 	if (p.next == null) {
+	// 		return 1;
+	// 	}
+	// 	else {
+	// 		return 1 + size(p.next);
+	// 	}
+	// }
+
+	// public int size() {
+	// 	return size(first);
+	// }
 
 	public static void main(String[] args) {
  		/* Creates a list of one integer, namely 10 */
