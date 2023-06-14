@@ -1,16 +1,24 @@
 package lec7_lists4.DIY;
 
+import net.sf.saxon.om.Item;
+
 /** This is a fill in the blanks version of the SLList class
  *  in case you want to try to figure out how to write it yourself.
  *  After writing your methods, you can run the AListTest file.
  */
 public class AList {
     /** Creates an empty list. */
+    private Item[] items;
+    private int size;
+
     public AList() {
+        items = (Item[]) new Object[100];
+        size = 0;
     }
 
     /** Inserts X into the back of the list. */
     public void addLast(int x) {
+
     }
 
     /** Returns the item from the back of the list. */
